@@ -1,0 +1,40 @@
+.footer {
+    background: #262626;
+    color: #b9b9b9;
+
+    .container {
+        @include flex-between();
+        height: 90px;
+    }
+
+    &-copyright {
+        @include ralewaylight();
+        font-size: 16px;
+    }
+
+    &-logo {
+        @include pacificoregular();
+        font-size: 25px;
+    }
+
+    &-author {
+        @include ralewaylight();
+        font-size: 15px;
+
+        &--red {
+            color: #ff2b58;
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .footer {
+        &-copyright {
+            width: 30%;
+        }
+
+        &-author {
+            width: 30%;
+        }
+    }
+}

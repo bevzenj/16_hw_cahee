@@ -1,0 +1,297 @@
+@font-face {
+    font-family: 'pacificoregular';
+    src: url('../fonts/pacifico/pacifico-webfont.eot');
+    src: url('../fonts/pacifico/pacifico-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/pacifico/pacifico-webfont.woff2') format('woff2'),
+         url('../fonts/pacifico/pacifico-webfont.woff') format('woff'),
+         url('../fonts/pacifico/pacifico-webfont.ttf') format('truetype'),
+         url('../fonts/pacifico/pacifico-webfont.svg#pacificoregular') format('svg');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'ralewaybold';
+    src: url('../fonts/raleway/raleway-bold-webfont.eot');
+    src: url('../fonts/raleway/raleway-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/raleway/raleway-bold-webfont.woff2') format('woff2'),
+         url('../fonts/raleway/raleway-bold-webfont.woff') format('woff'),
+         url('../fonts/raleway/raleway-bold-webfont.ttf') format('truetype'),
+         url('../fonts/raleway/raleway-bold-webfont.svg#ralewaybold') format('svg');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'ralewayheavy';
+    src: url('../fonts/raleway/raleway-heavy-webfont.eot');
+    src: url('../fonts/raleway/raleway-heavy-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/raleway/raleway-heavy-webfont.woff2') format('woff2'),
+         url('../fonts/raleway/raleway-heavy-webfont.woff') format('woff'),
+         url('../fonts/raleway/raleway-heavy-webfont.ttf') format('truetype'),
+         url('../fonts/raleway/raleway-heavy-webfont.svg#ralewayheavy') format('svg');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'ralewaylight';
+    src: url('../fonts/raleway/raleway-light-webfont.eot');
+    src: url('../fonts/raleway/raleway-light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/raleway/raleway-light-webfont.woff2') format('woff2'),
+         url('../fonts/raleway/raleway-light-webfont.woff') format('woff'),
+         url('../fonts/raleway/raleway-light-webfont.ttf') format('truetype'),
+         url('../fonts/raleway/raleway-light-webfont.svg#ralewaylight') format('svg');
+    font-weight: 300;
+    font-style: normal;
+}
+
+header { 
+    background: #f9f8fb;
+    padding-top: 45px;
+    color: #262626;
+}
+
+.header .container {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-logo__title {
+    font-family: 'pacificoregular';
+    font-weight: 400;
+    font-size: 50px;
+}
+
+.nav-list {
+    list-style: none;
+    display: flex;
+}
+
+.nav-list__item {
+    font-family: 'ralewaybold';
+    font-weight: 700;
+    font-size: 16px;
+    text-transform: uppercase;
+    margin-left: 35px;
+    position: relative;
+}
+
+.nav-list__link {
+    text-decoration: none;
+    color: inherit;
+}
+
+.nav-list__link:hover {
+    color: inherit;
+}
+
+.nav-list__item::after {
+    content: "";
+    background: #ff6033;
+    width: 0%;
+    height: 3px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    top: -5px;
+    transition-duration: 0.5s;
+}
+
+.nav-list__item:hover::after {
+    width: 100%;
+}
+
+/* Intro */
+
+.intro {
+    background: #f9f8fb;
+    color: #262626;
+}
+
+.intro .container {
+    position: relative;
+    z-index: 1;
+    top: -50px;
+    display: flex;
+    align-items: center;
+    height: 1000px;
+    background: url('../image/background_header.png');
+    background-position: left;
+}
+
+.intro-discr__title {
+    font-family: 'ralewayheavy';
+    font-weight: 900;
+    font-size: 60px;
+}
+
+.intro-discr__text {
+    font-family: 'ralewaylight';
+    font-weight: 300;
+    font-size: 17px;
+}
+
+.intro-btn {
+    font-family: 'ralewaylight';
+    font-weight: 300;
+    font-size: 20px;
+    text-transform: uppercase;
+    color: #ffffff;
+    background: #ff5f33;
+    padding: 15px 25px;
+    border: none;
+    box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.5);
+}
+
+.intro-btn:hover {
+    background: #ffffff;
+    color: #ff5f33;
+    box-shadow: 0px 0px 15px 5px rgba(0,0,0,0.5);
+    transition-duration: 0.5s;
+}
+
+/* About Us */
+
+.about {
+    background: #00c3c3;
+    margin-top: -90px;
+    color: #ffffff;
+}
+
+.about .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 0;
+}
+
+.about__img {
+    width: 100%;
+}
+
+.about__title {
+    font-family: 'ralewaybold';
+    font-weight: 700;
+    font-size: 90px;
+}
+
+.about__text {
+    font-family: 'ralewaylight';
+    font-weight: 300;
+    font-size: 17px;
+}
+
+/* Contact */
+
+.contact {
+    background: url('../image/background_footer.png');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    height: 57vw;
+    color: #262626;
+}
+
+.contact-header {
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 90px;
+    width: 30%;
+}
+
+.contact-header__title {
+    font-family: 'ralewaybold';
+    font-weight: 700;
+    font-size: 90px;
+}
+
+.contact-header__subtitle {
+    font-family: 'ralewaylight';
+    font-weight: 300;
+    font-size: 17px;
+}
+
+.contact-main {
+    display: flex;
+    margin-top: 50px;
+}
+
+.contact-main__form-input {
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    background: rgba(0,196,196,0.5);
+    outline: none;
+    border: none;
+    color: #ffffff;
+    padding: 20px 15px;
+    margin-bottom: 15px;
+}
+
+.contact-main__form-input::placeholder {
+    font-size: 17px;
+    color: rgba(255,255,255,0.7);;
+}
+
+.contact-main__form-input:focus {
+    border-left: 5px solid #262626;
+    transition-duration: 0.2s;
+    background: rgba(0,196,196,1);
+}
+
+.contact-main__info-title {
+    font-family: 'ralewaybold';
+    font-weight: 700;
+    font-size: 17px;
+    text-transform: uppercase;
+}
+
+.contact-main__info-discr {
+    font-family: 'ralewaylight';
+    font-weight: 300;
+    font-size: 20px;
+}
+
+.contact-main__info a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Footer */
+
+.footer {
+    background: #262626;
+    color: #b9b9b9;
+}
+
+.footer .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 90px;
+}
+
+.footer-copyright {
+    font-family: 'ralewaylight';
+    font-weight: 300;
+    font-size: 16px;
+}
+
+.footer-logo {
+    font-family: 'pacificoregular';
+    font-weight: 400;
+    font-size: 25px;
+}
+
+.footer-author {
+    font-family: 'ralewaylight';
+    font-weight: 300;
+    font-size: 15px;
+}
+
+.footer-authot--red {
+    color: #ff2b58;
+}

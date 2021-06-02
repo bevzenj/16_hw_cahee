@@ -1,0 +1,129 @@
+.blog {
+    background: #b07cf7;
+    color: #ffffff;
+    padding: 100px 0;
+
+    &-discr {
+        width: 50%;
+        margin: 0 auto 40px;
+    }
+
+    &-main {
+        @include flex-between();
+
+        &__content {
+            padding: 30px;
+            width: 370px;
+            height: 310px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            box-shadow: 12px -158px 75px -41px rgba(0,0,0,0.9) inset;
+
+            &:hover {
+                filter: drop-shadow(3px 0px 15px #000000);
+                transition-duration: 0.5s;
+            }
+        }
+
+        &__content--first-post {
+            background-image: url("../image/blog/img_1.png");
+        }
+
+        &__content--second-post {
+            background-image: url("../image/blog/img_2.png");
+            background-position: bottom;
+        }
+
+        &__content--third-post {
+            background-image: url("../image/blog/img-3.png");
+            background-position: center;
+        }
+
+        &__content-date {
+            display: flex;
+            flex-direction: column;
+            width: fit-content;
+            background: rgba(0,0,0,0.40);
+            border-radius: 10%;
+
+            &-number {
+                text-align: center;
+                @include ralewaybold();
+                font-size: 32px;
+                margin-top: -5px;
+                margin-bottom: -10px;
+                padding: 0 15px;
+            }
+
+            &-mounth {
+                text-align: center;
+                @include ralewayheavy();
+                font-size: 21px;
+                text-transform: uppercase;
+            }
+        }
+
+        &__content-link {
+            text-decoration: none;
+            color: #ffffff;
+
+            &:hover {
+                color: #b07cf7;
+                transition-duration: 0.5s;
+            }
+        }
+
+        &__content-title {
+            @include ralewaybold();
+            font-size: 20px;
+        }
+
+        &__content-author {
+            @include ralewaylight();
+            font-size: 13px;
+        }
+    }
+
+    &-button {
+        margin-top: 50px;
+        
+        &__btn {
+            background: #f72a3b;
+            padding: 10px 40px;
+        }
+    }
+}
+
+@media screen and (max-width: 1400px) {
+    .blog {
+        &-main__content {
+            margin: 0 20px;
+        }
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .blog {
+        &-discr {
+            width: 70%;
+        }
+
+        &-main {
+            flex-wrap: wrap;
+            justify-content: center;
+
+            &__content {
+                margin-top: 40px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .blog {
+        &-discr {
+            width: 100%;
+        }
+    }
+}

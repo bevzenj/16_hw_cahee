@@ -1,0 +1,37 @@
+.general-title {
+    text-align: center;
+    @include ralewaybold();
+    font-size: 90px;
+}
+
+.general-subtitle {
+    text-align: center;
+    @include ralewaylight();
+    font-size: 17px;
+}
+
+.general-button {
+    display: flex;
+    justify-content: center;
+
+    &__btn {
+        @include ralewaylight();
+        font-size: 20px;
+        color: #ffffff;
+        text-transform: uppercase;
+        border: none;
+        box-shadow: 3px 4px 6px 0 rgba(0,0,0,0.73);
+
+        &:hover {
+            box-shadow: 7px 6px 0px 2px rgba(0,0,0,0.73);
+            transition-duration: 0.5s;
+        }
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .general-title {
+        font-size: 60px;
+        text-align: center;
+    }
+}

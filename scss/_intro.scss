@@ -1,0 +1,31 @@
+.intro {
+    background: #f9f8fb;
+    color: #262626;
+    background: url('../image/intro/background_header.png');
+    background-position: center center;
+    
+
+    .container {
+        position: relative;
+        z-index: 1;
+        top: -50px;
+        display: flex;
+        align-items: center;
+        height: 1000px;
+    }
+
+    &-discr__title {
+        @include ralewayheavy();
+        font-size: 60px;
+    }
+
+    &-discr__text {
+        @include ralewaylight();
+        font-size: 17px;
+    }
+
+    &__btn {
+        background: #ff5f33;
+        padding: 15px 25px;
+    }
+}
