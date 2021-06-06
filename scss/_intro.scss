@@ -1,17 +1,16 @@
 .intro {
-    background: #f9f8fb;
     color: #262626;
     background: url('../image/intro/background_header.png');
     background-position: center center;
+    position: relative;
+    top: -60px;
+    height: 900px;
     
 
     .container {
-        position: relative;
-        z-index: 1;
-        top: -50px;
         display: flex;
         align-items: center;
-        height: 1000px;
+        height: 100%;
     }
 
     &-discr__title {
