@@ -184,19 +184,18 @@
 }
 
 .intro {
-  background: #f9f8fb;
   color: #262626;
   background: url("../image/intro/background_header.png");
   background-position: center center;
+  position: relative;
+  top: -60px;
+  height: 900px;
 }
 
 .intro .container {
-  position: relative;
-  z-index: 1;
-  top: -50px;
   display: flex;
   align-items: center;
-  height: 1000px;
+  height: 100%;
 }
 
 .intro-discr__title {
@@ -218,7 +217,7 @@
 
 .about {
   background: #00c3c3;
-  margin-top: -90px;
+  margin-top: -60px;
   color: #ffffff;
 }
 
